@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/images/microsoft-favicon.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/992825dbbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body class="overflow-x-hidden">
+    <div class="flex md:p-4 justify-between items-center p-2 md:px-12">
+      <div class="md:order-2 flex justify-center items-center">
+        <div
+          onclick="toggleMenu()"
+          id="button"
+          class="hamburgur p-4 inline-block curser-pointer space-y-1 md:hidden"
+        >
+          <div id="s-1" class="h-0.5 relative w-5 bg-black"></div>
+          <div id="s-2" class="h-0.5 w-5 bg-black"></div>
+          <div id="s-3" class="h-0.5 w-5 bg-black"></div>
+        </div>
+
+        <img
+          src="./assets//images/search.png"
+          alt=""
+          class="search w-6 md:w-0"
+        />
+        <div
+          id="menu"
+          class="menu top-14 border-b-2 border-[rgb(138,138,138)] text-base left-0 w-full justify-center z-50 absolute hidden capitalize flex-col bg-[rgb(242,242,242)]"
+        >
+          <a href="https://www.microsoft.com/en-in/microsoft-365?rtc=1"
+            ><p class="border-b-2 border-[rgb(230,230,230)] px-4 py-4">
+              Microsoft 365
+            </p></a
+          >
+          <a
+            href="https://www.microsoft.com/en-in/microsoft-teams/group-chat-software?rtc=1"
+            ><p class="border-b-2 border-[rgb(230,230,230)] px-4 py-4">
+              office
+            </p></a
+          >
+          <a href="https://www.microsoft.com/en-in/windows/?r=1"
+            ><p class="border-b-2 border-[rgb(230,230,230)] px-4 py-4">
+              windows
+            </p></a
+          >
+          <a href="https://www.microsoft.com/en-in/surface"
+            ><p class="border-b-2 border-[rgb(230,230,230)] px-4 py-4">
+              surface
+            </p></a
+          >
+          <a href="https://www.xbox.com/en-GB/"
+            ><p class="border-b-2 border-[rgb(230,230,230)] px-4 py-4">
+              xbox
+            </p></a
+          >
+          <a href="https://support.microsoft.com/en-us"
+            ><p class="border-b-2 border-[rgb(230,230,230)] px-4 py-4">
+              support
+            </p></a
+          >
+          <a href=""><p class="px-4 py-4">view sitemap</p></a>
+        </div>
+      </div>
+      <div
+        class="w-0 h-10 items-center overflow-hidden flex gap-x-4 absolute ml-32 capitalize order-2 text-xs md:w-auto md:overflow-auto"
+      >
+        <a href="https://www.microsoft.com/en-in/microsoft-365?rtc=1">
+          <p class="hover:border-b-2 border-black">Microsoft 365</p></a
+        >
+        <a
+          href="https://www.microsoft.com/en-in/microsoft-teams/group-chat-software?rtc=1"
+        >
+          <p class="hover:border-b-2 border-black">Teams</p></a
+        >
+        <a href="https://www.microsoft.com/en-in/windows/?r=1">
+          <p class="hover:border-b-2 border-black">windows</p></a
+        >
+        <a href="https://www.microsoft.com/en-in/surface"
+          ><p class="hover:border-b-2 border-black">surface</p></a
+        >
+        <a href="https://www.xbox.com/en-GB/">
+          <p class="hover:border-b-2 border-black">xbox</p></a
+        >
+        <a href="https://support.microsoft.com/en-us"
+          ><p class="hover:border-b-2 border-black">support</p></a
+        >
+      </div>
+      <div class="logo md:order-1">
+        <a href="/">
+          <img class="w-28" src="./assets/images/microsoft-logo.png"
+        /></a>
+      </div>
+      <div class="cart flex space-x-8 md:order-3">
+        <div
+          id="dropdown-btn"
+          onclick="dropdown()"
+          class="text-xs cursor-pointer h-16 right-52 py-6 px-3 top-0 hidden absolute lg:flex space-x-2"
+        >
+          <p>All Microsoft</p>
+          <i style="font-size: 0.7rem" class="pt-1 fa-solid fa-angle-down"></i>
+        </div>
+        <div
+          id="dropdown"
+          class="z-20 left-6 border-b-2 hidden border-black top-14 absolute"
+        >
+          <div class="space-x-20 px-6 pr-10 py-4 flex bg-[rgb(242,242,242)]">
+            <div class="flex text-xs flex-col space-y-6 capitalize">
+              <p class="text-sm font-semibold py-2">software</p>
+              <a
+                href="https://apps.microsoft.com/store/apps?hl=en-in&gl=in&icid=CNavAppsWindowsApps"
+                ><p class="hover:underline">windows apps</p></a
+              >
+              <a
+                href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage"
+                ><p class="hover:underline">oneDrive</p></a
+              >
+              <a href="https://outlook.live.com/owa/">
+                <p class="hover:underline">outlook</p></a
+              >
+              <a href="https://www.skype.com/en/"
+                ><p class="hover:underline">skype</p></a
+              >
+              <a
+                href="https://www.microsoft.com/en-in/microsoft-365/onenote/digital-note-taking-app?ms.url=onenotecom&rtc=1"
+                ><p class="hover:underline">oneNote</p></a
+              >
+              <a
+                href="https://www.microsoft.com/en-in/microsoft-teams/group-chat-software?rtc=1"
+                ><p class="hover:underline">Microsoft Teams</p></a
+              >
+            </div>
+            <div class="flex text-xs flex-col space-y-6 capitalize">
+              <p class="text-sm font-semibold py-2">pc & devices</p>
+              <a
+                href="https://www.microsoft.com/en-in/store/b/xbox?icid=CNavDevicesXbox"
+              >
+                <p class="hover:underline">shop xbox</p></a
+              >
+              <a href="https://www.microsoft.com/en-in/accessories"
+                ><p class="hover:underline">accessories</p></a
+              >
+            </div>
+            <div class="flex text-xs flex-col space-y-6 capitalize">
+              <p class="text-sm font-semibold py-2">entertainment</p>
+              <a
+                href="https://www.xbox.com/en-in/games/store/xbox-game-pass-ultimate/cfq7ttc0khs0?WT.mc_id=CNavGamesXboxGamePassUltimate"
+              >
+                <p class="hover:underline">xbox game pass ultimate</p></a
+              >
+              <a
+                href="https://www.xbox.com/en-in/games/store/xbox-live-gold/cfq7ttc0k5dj?WT.mc_id=CNavGamesXboxLiveGold"
+              >
+                <p class="hover:underline">xbox live gold</p></a
+              >
+              <a href="https://www.xbox.com/en-IN/games/all-games">
+                <p class="hover:underline">xbox games</p></a
+              >
+              <a
+                href="https://www.microsoft.com/en-in/store/games/windows?icid=CNavGamesWindowsGames"
+              >
+                <p class="hover:underline">pc games</p></a
+              >
+              <a
+                href="https://www.microsoft.com/en-in/store/games/windows?icid=TopNavWindowsGames"
+              >
+                <p class="hover:underline">windows digital games</p></a
+              >
+            </div>
+            <div class="flex text-xs flex-col space-y-6 capitalize">
+              <p class="text-sm font-semibold py-2">business</p>
+              <a href="https://www.microsoft.com/en-in/microsoft-cloud">
+                <p class="hover:underline">microsoft cloud</p></a
+              >
+              <a href="https://www.microsoft.com/en-in/security">
+                <p class="hover:underline">microsoft security</p></a
+              >
+              <a href="https://azure.microsoft.com/en-in/">
+                <p class="hover:underline">azure</p></a
+              >
+              <a href="https://dynamics.microsoft.com/en-in/">
+                <p class="hover:underline">Dynamics 365</p></a
+              >
+              <a href="https://www.microsoft.com/en-in/microsoft-365/business">
+                <p class="hover:underline">microsoft 365 for business</p></a
+              >
+              <a href="https://www.microsoft.com/en-in/industry">
+                <p class="hover:underline">microsoft Industry</p></a
+              >
+              <a href="https://powerplatform.microsoft.com/en-in/">
+                <p class="hover:underline">microsoft power platform</p></a
+              >
+              <a href="https://www.microsoft.com/en-in/windows-365">
+                <p class="hover:underline">windows 365</p></a
+              >
+            </div>
+            <div class="flex text-xs flex-col space-y-6 capitalize">
+              <p class="text-sm font-semibold py-2">developer & it</p>
+              <a href="https://developer.microsoft.com/en-in/">
+                <p class="hover:underline">developer center</p></a
+              >
+              <a href="https://docs.microsoft.com/en-in/">
+                <p class="hover:underline">Documentation</p></a
+              >
+              <a href="https://docs.microsoft.com/en-in/learn/">
+                <p class="hover:underline">microsoft learn</p></a
+              >
+              <a href="https://techcommunity.microsoft.com/">
+                <p class="hover:underline">microsoft tech community</p></a
+              >
+              <a href="https://azuremarketplace.microsoft.com/en-in/">
+                <p class="hover:underline">azure Marketplace</p></a
+              >
+              <a href="https://appsource.microsoft.com/en-in/">
+                <p class="hover:underline">AppSource</p></a
+              >
+              <a href="https://visualstudio.microsoft.com/">
+                <p class="hover:underline">visual Studio</p></a
+              >
+            </div>
+            <div class="flex text-xs flex-col space-y-6 capitalize">
+              <p class="text-sm font-semibold py-2">other</p>
+              <a href="https://www.microsoft.com/en-in/download/default.aspx">
+                <p class="hover:underline">free Download & security</p></a
+              >
+              <a
+                href="https://www.microsoft.com/en-in/education?icid=CNavMSCOML0_Studentsandeducation"
+              >
+                <p class="hover:underline">education</p></a
+              >
+              <a
+                href="https://www.microsoft.com/en-in/p/xbox-gift-card-digital-code/cfq7ttc0k7qk/0001?icid=TopNavMoreGiftCards"
+              >
+                <p class="hover:underline">gift cards</p></a
+              >
+              <a href="https://www.microsoft.com/en-in/licensing/default?rtc=1">
+                <p class="hover:underline">licensing</p></a
+              >
+            </div>
+          </div>
+          <div
+            class="flex bg-[rgb(230,230,230)] justify-center py-3 space-x-2 text-xs"
+          >
+            <a href="https://www.microsoft.com/en-in/sitemap.aspx">
+              <p class="hover:underline">VEIW SITEMAPE</p></a
+            >
+            <i
+              style="font-size: 0.6rem"
+              class="pt-1 fa-solid fa-chevron-right"
+            ></i>
+          </div>
+        </div>
+        <img
+          src="./assets//images/search.png"
+          alt=""
+          class="search w-0 md:w-5 h-5 mt-2"
+        />
+        <a href="https://www.microsoft.com/en-in/store/cart"
+          ><img
+            class="cart w-5 h-5 mt-2"
+            src="./assets/images/shopping-cart.png"
+            alt=""
+        /></a>
+        <div class="user border-1 w-8 h-8 py-2 px-2 rounded-[50%] border-black">
+          <a
+            href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1661356284&rver=7.3.6960.0&wp=MBI_SSL&wreply=https%3a%2f%2fwww.microsoft.com%2frpsauth%2fv1%2faccoun
+          t%2fSignInCallback%3fstate%3deyJSdSI6Imh0dHBzOi8vd3d3Lm1pY3Jvc29mdC5jb20vZW4taW4vIiwiTGMiOiIxNjM5MyIsIkhvc3QiOiJ3d3cubWljcm9zb2Z0LmNvbSJ9&lc=16393&id=74335&aadredir=0"
+            ><img
+              src="./assets/images/add-user.png"
+              alt=""
+              class="user-avtar w-4"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex transition-all duration-1000">
+      <div
+        id="element-1"
+        class="bg-[rgb(242,242,242)] md:bg-[rgb(245,245,245)] md:py-20 w-[100%] md:flex shadow-md drop-shadow-sm md:items-center lg:shadow-none shadow-[rgb(235,235,235)]"
+      >
+        <div class="right md:hidden">
+          <img
+            class="h-96"
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-M365-Screenplates-Update-Excel:VP1-539x440"
+            alt=""
+          />
+        </div>
+        <div class="left p-6 bg-white md:bg-transparent md:w-96 md:ml-28">
+          <h1 class="my-2 py-2 heading text-3xl font-semibold">
+            Microsoft 365
+          </h1>
+          <p class="my-2 para text-base">
+            Premium Office apps, extra cloud storage, advanced security, and
+            more – all in one convenient subscription
+          </p>
+          <div class="flex space-x-4 md:flex-col lg:flex-row items-center">
+            <a
+              href="https://www.microsoft.com/en-in/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?icid=mscom_marcom_H1a_M365Family&activetab=pivot%3aoverviewtab"
+            >
+              <button
+                class="my-4 button md:w-48 hover:bg-[rgb(15,94,155)] bg-[rgb(0,103,184)] font-medium text-white px-4 py-2"
+              >
+                For up to 6 people
+              </button></a
+            >
+            <div
+              class="py-2 text-base font-medium flex space-x-2 text-[rgb(0,124,209)]"
+            >
+              <a
+                href="https://www.microsoft.com/en-in/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf?icid=mscom_marcom_H1b_M365Personal&activetab=pivot%3aoverviewtab"
+              >
+                <p class="font-semibold hover:underline hover:mr-1">
+                  For 1 person
+                </p></a
+              >
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="right w-0 overflow-hidden md:w-[45rem] md:ml-28 md:overflow-auto"
+        >
+          <img class="w-[60rem]" src="./assets/images/home-image.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="justify-center flex flex-wrap space-y-6 px-4 py-10">
+      <div></div>
+      <div class="w-60">
+        <img class="px-20" src="./assets/images/window-icon.jpg" alt="" />
+        <a
+          href="https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products?icid=MSCOM_QL_M365"
+        >
+          <p class="text-[rgb(49,103,184)] my-2 underline font-medium">
+            Choose your Microsoft 365
+          </p></a
+        >
+      </div>
+      <div class="px-4 lg:px-0 lg:pl-10 w-60">
+        <img class="px-16" src="./assets/images/mirroring-logo.jpg" alt="" />
+        <a href="https://www.microsoft.com/en-in/surface?icid=MSCOM_QL_Surface"
+          ><p class="text-[rgb(49,103,184)] my-2 underline font-medium">
+            Explore Surface devices
+          </p></a
+        >
+      </div>
+      <div class="w-72 px-16">
+        <img class="px-10 w-38" src="./assets/images/xbox-logo.jpg" alt="" />
+        <a
+          href="https://www.microsoft.com/en-in/store/b/xbox?icid=MSCOM_QL_Xbox"
+        >
+          <p class="text-[rgb(49,103,184)] my-2 underline font-medium">
+            Buy Xbox games
+          </p></a
+        >
+      </div>
+      <div class="w-60 lg:px-0 lg:pl-4 px-12">
+        <img class="px-8" src="./assets/images/window-icon.jpg" alt="" />
+        <a
+          href="https://www.microsoft.com/en-in/windows/get-windows-11?icid=MSCOM_QL_Windows&r=1"
+        >
+          <p class="text-[rgb(49,103,184)] my-2 underline font-medium">
+            Get Windows 11
+          </p></a
+        >
+      </div>
+    </div>
+    <div
+      class="flex flex-col space-y-10 px-2 md:flex-row md:mx-6 justify-center lg:flex-nowrap sm:flex-row sm:flex-wrap"
+    >
+      <div></div>
+      <div class="flex flex-col space-y-4 px-4 sm:w-1/2 lg:w-80">
+        <img src="./assets/images/card-image 1.jpg  " />
+        <h1 class="font-semibold text-2xl">PC Game Pass</h1>
+        <p class="">
+          Unlock 100+ great games and EA Play, plus get your first month for
+          ₹50. Offer available to new subscribers only.
+        </p>
+        <a
+          href="https://www.xbox.com/en-in/games/store/pc-game-pass/cfq7ttc0kgq8?icid=mscom_marcom_CPH3a_PCGamePass"
+        >
+          <div
+            class="py-2 text-base font-medium flex space-x-2 text-[rgb(0,124,209)]"
+          >
+            <p class="hover:underline hover:mr-1">Join Now</p>
+            <i class="pt-1 fa-solid fa-chevron-right"></i></div
+        ></a>
+      </div>
+      <div class="flex flex-col space-y-4 px-4 sm:w-1/2 lg:w-80">
+        <img src="./assets/images/card-image 2.jpg " />
+        <h1 class="font-semibold text-2xl">Surface Laptop 4</h1>
+        <p class="">
+          Do it all with a perfect balance of sleek, ultra-thin design,
+          multitasking speed and improved performance.
+        </p>
+        <a
+          href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-4?icid=mscom_marcom_CPH2a_SurfaceLaptop4#overview"
+        >
+          <div
+            class="p-2 text-base font-medium flex space-x-2 text-[rgb(0,124,209)]"
+          >
+            <p class="hover:underline hover:mr-1">Shop now</p>
+            <i class="pt-1 fa-solid fa-chevron-right"></i></div
+        ></a>
+      </div>
+      <div class="flex flex-col space-y-4 px-4 sm:w-1/2 lg:w-80">
+        <img src="./assets/images/card-image 3.jpg " />
+        <h1 class="font-semibold text-2xl">Surface Laptop Go 2</h1>
+        <p class="">
+          A sleek laptop with a 12.4-inch touchscreen, great typing experience
+          and improved HD camera.
+        </p>
+        <a
+          href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-go-2?icid=mscom_marcom_CPH1a_SurfaceLaptopGo2&icid=FY22SpringSurface#overview"
+        >
+          <div
+            class="py-2 text-base font-medium flex space-x-2 text-[rgb(0,124,209)]"
+          >
+            <p class="hover:underline hover:mr-1">Learn more</p>
+            <i class="pt-1 fa-solid fa-chevron-right"></i></div
+        ></a>
+      </div>
+      <div class="flex flex-col space-y-4 px-4 sm:w-1/2 lg:w-80">
+        <img src="./assets/images/card-image 4.jpg " />
+        <h1 class="font-semibold text-2xl">
+          Designed for life today - and tomorrow
+        </h1>
+        <p class="">
+          The next-generation of games .Your goals .Friends and family . Windows
+          11 was made to bring you closer to everything you love
+        </p>
+        <a
+          href="https://www.microsoft.com/en-in/windows/windows-11?icid=mscom_marcom_CPH4a_Win11PChlth#pchealthcheck"
+        >
+          <div
+            class="p-2 text-base font-medium flex space-x-2 text-[rgb(0,124,209)]"
+          >
+            <p class="hover:underline hover:mr-1">Join Now</p>
+            <i class="pt-1 fa-solid fa-chevron-right"></i></div
+        ></a>
+      </div>
+    </div>
+    <div class="flex flex-col lg:px-6 relative items-center my-10">
+      <div>
+        <a href="https://www.microsoft.com/en-us/edge?form=MI13F3&OCID=MI13F3"
+          ><img src="./assets//images/microsoft-home.jpg" alt=""
+        /></a>
+      </div>
+      <div
+        class="flex flex-col px-2 md:px-4 md:bottom-14 md:w-[95%] lg:absolute lg:w-1/3 lg:h-1/2 lg:top-36 lg:left-24 lg:p-8 md:drop-shadow-md md:shadow-black py-16 space-y-4 md:relative bg-white"
+      >
+        <h1 class="font-semibold text-2xl">Microsoft Edge</h1>
+        <p class="pr-8">
+          World-class performance with more privacy more productivity and more
+          value while you browse
+        </p>
+        <div class="pt-4">
+          <a
+            href="https://www.microsoft.com/en-us/edge?form=MI13F3&OCID=MI13F3"
+          >
+            <div
+              class="text-base hover:bg-[rgb(15,94,155)] font-medium bg-[rgb(0,103,184)] text-white py-2 px-4 w-36"
+            >
+              <p class="">Download now</p>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <h1 class="pl-[4.3%] -mb-8 font-semibold text-2xl">For Business</h1>
+    <div
+      class="flex flex-col space-y-10 px-2 md:flex-row md:mx-6 justify-center lg:flex-nowrap sm:flex-row sm:flex-wrap"
+    >
+      <div></div>
+      <div class="flex flex-col space-y-4 px-4 sm:w-1/2 lg:w-80">
+        <img src="./assets/images/cards2-image 1.jpg" />
+        <div
+          class="new-button bg-[rgb(255,185,0)] text-black px-3 py-1 font-medium w-14"
+        >
+          New
+        </div>
+        <h1 class="font-semibold text-2xl">Surface Laptop Go 2 for Business</h1>
+        <p class="">
+          A sleek, portable laptop featuring a great typing experience, Windows
+          11 Pro and professional-grade performance.
+        </p>
+        <a
+          href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-go-2?icid=mscom_marcom_CPH1a_SurfaceLaptopGo2&icid=FY22SpringSurface#overview"
+        >
+          <div
+            class="py-2 text-base font-medium flex space-x-2 text-[rgb(0,124,209)]"
+          >
+            <p class="hover:mr-1 hover:underline">Learn more</p>
+            <i class="pt-1 fa-solid fa-chevron-right"></i></div
+        ></a>
+      </div>
+      <div class="flex flex-col space-y-4 px-4 sm:w-1/2 lg:w-80">
+        <img src="./assets/images/cards2-image 2.jpg" />
+        <h1 class="font-semibold text-2xl">Get Microsoft Teams for free</h1>
+        <p class="">
+          Online meetings, chat and shared cloud storage - all in one place.
+        </p>
+        <a
+          href="https://www.microsoft.com/en-in/microsoft-teams/free?icid=mscom_marcom_CPW2a_MicrosoftTeams"
+        >
+          <div
+            class="p-2 text-base font-medium flex space-x-2 text-[rgb(0,124,209)]"
+          >
+            <p class="hover:mr-1 hover:underline">Sign up for free</p>
+            <i class="pt-1 fa-solid fa-chevron-right"></i></div
+        ></a>
+      </div>
+      <div class="flex flex-col space-y-4 px-4 sm:w-1/2 lg:w-80">
+        <img src="./assets/images/cards2-image 3.jpg " />
+        <h1 class="font-semibold text-2xl">Microsoft 365 for business</h1>
+        <p class="">
+          Stay a step ahead with powerful apps for productivity, connection and
+          security.
+        </p>
+        <a
+          href="https://www.microsoft.com/en-in/microsoft-365/business/compare-all-microsoft-365-business-products?icid=mscom_marcom_CPW3a_M365forBusiness&activetab=tab%3aprimaryr2"
+        >
+          <div
+            class="py-2 text-base font-medium flex space-x-2 text-[rgb(0,124,209)]"
+          >
+            <p class="hover:mr-1 hover:underline">Shop now</p>
+            <i class="pt-1 fa-solid fa-chevron-right"></i></div
+        ></a>
+      </div>
+      <div class="flex flex-col space-y-4 px-4 sm:w-1/2 lg:w-80">
+        <img src="./assets/images/cards2-image 4.jpg " />
+        <h1 class="font-semibold text-2xl">Windows 11 for business is here</h1>
+        <p class="">
+          Designed for hybrid work. Powerful for employees. Consistent for IT.
+          Secure for all.
+        </p>
+        <a
+          href="https://www.microsoft.com/en-in/windows/business?icid=mscom_marcom_CPW4a_Windows11forBusiness"
+        >
+          <div
+            class="p-2 text-base font-medium flex space-x-2 text-[rgb(0,124,209)]"
+          >
+            <p class="hover:mr-1 hover:underline">Learn more</p>
+            <i class="pt-1 fa-solid fa-chevron-right"></i></div
+        ></a>
+      </div>
+    </div>
+    <div class="py-14 pl-8 md:p-14 flex space-x-6">
+      <p class="text-lg">Follow Microsoft</p>
+      <div class="text-lg space-x-6">
+        <a href="https://www.facebook.com/MicrosoftIndia"
+          ><i style="font-size: 1.4rem" class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com/microsoftindia"
+          ><i style="font-size: 1.4rem" class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.youtube.com/user/IndiaMicrosoftVideos"
+          ><i style="font-size: 1.4rem" class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+    </div>
+    <div class="bg-[rgb(242,242,242)]">
+      <div
+        class="pt-8 flex flex-col px-8 sm:px-0 justify-center text-[rgb(97,97,97)] text-xs gap-x-24 gap-y-8 xs:flex-wrap xs:flex-row"
+      >
+        <div class="flex-col flex gap-3">
+          <h1 class="text-[rgb(106,97,106)] font-semibold text-base">
+            What's new
+          </h1>
+          <a href="https://www.microsoft.com/en-in/microsoft-365?rtc=1"
+            ><p class="hover:underline">Microsoft 365</p></a
+          >
+          <a
+            href="https://www.microsoft.com/en-in/surface/devices/surface-pro-x"
+            ><p class="hover:underline">Surface Pro X</p></a
+          >
+          <a
+            href="https://www.microsoft.com/en-in/surface/devices/surface-pro-7#overview"
+            ><p class="hover:underline">Surface Pro 7</p></a
+          >
+          <a
+            href="https://www.microsoft.com/en-in/surface/devices/surface-laptop-3"
+            ><p class="hover:underline">Surface Laptop 3</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/windows/windows-11-apps"
+            ><p class="hover:underline">Windows 11 apps</p></a
+          >
+        </div>
+        <div class="flex-col flex gap-3">
+          <h1 class="text-[rgb(106,97,106)] font-semibold text-base">
+            Microsoft Store
+          </h1>
+          <a
+            href="https://account.microsoft.com/account/Account?refd=www.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2F%3Frefd%3Dwww.microsoft.com&destrt=home.landing"
+            ><p class="hover:underline">Account profile</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/download"
+            ><p class="hover:underline">Download Center</p></a
+          >
+          <a
+            href="https://support.microsoft.com/en-gb/microsoft-store-and-billing?ocid=MS_Footer_StoreSupport"
+            ><p class="hover:underline">Microsoft Store Support</p></a
+          >
+          <a
+            href="https://support.microsoft.com/en-us/account-billing/returning-items-you-bought-from-microsoft-store-for-exchange-or-refund-81629012-aa4f-f48b-2394-8596f415072b"
+          >
+            <p class="hover:underline">Returns</p></a
+          >
+          <a
+            href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1661445070&rver=7.0.6738.0&wp=MBI_SSL&wreply=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin%3Fru%3Dhttps%253A%252F%252Faccount.microsoft.com%252Fbilling%252Forders%253FforcedSignIn%253D1%2526refd%253Dwww.microsoft.com&lc=2057&id=292666&lw=1&fl=easi2"
+            ><p class="hover:underline">Order tracking</p></a
+          >
+        </div>
+        <div class="flex-col xs:pl-10 sm:pl-0 flex gap-3">
+          <h1 class="text-[rgb(106,97,106)] font-semibold text-base">
+            Education
+          </h1>
+          <a href="https://www.microsoft.com/en-in/education"
+            ><p class="hover:underline">Microsoft in education</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/education/devices/overview"
+            ><p class="hover:underline">Devices for education</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/education/products/teams"
+            ><p class="hover:underline">Microsoft Teams for Education</p></a
+          >
+          <a
+            href="https://www.microsoft.com/en-IN/education/products/microsoft-365"
+            ><p class="hover:underline">Microsoft 365 Education</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/education/products/office"
+            ><p class="hover:underline">Office Education</p></a
+          >
+          <a
+            href="https://docs.microsoft.com/en-gb/learn/educator-center/?source=mec"
+          >
+            <p class="hover:underline">Educator training and development</p></a
+          >
+          <a href="https://www.microsoft.com/en-us/store/b/education">
+            <p class="hover:underline">Deals for students and parents</p></a
+          >
+          <a href="https://azure.microsoft.com/en-in/free/students/">
+            <p class="hover:underline">Azure for students</p></a
+          >
+        </div>
+        <div class="flex-col flex gap-3">
+          <h1 class="text-[rgb(106,97,106)] font-semibold text-base">
+            Business
+          </h1>
+          <a href="https://www.microsoft.com/en-in/microsoft-cloud">
+            <p class="hover:underline">Microsoft Cloud</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/security">
+            <p class="hover:underline">Microsoft Security</p></a
+          >
+          <a href="https://azure.microsoft.com/en-in/">
+            <p class="hover:underline">Azure</p></a
+          >
+          <a href="https://dynamics.microsoft.com/en-in/">
+            <p class="hover:underline">Dynamics 365</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/microsoft-365/business/">
+            <p class="hover:underline">Microsoft 365</p></a
+          >
+          <a href="https://about.ads.microsoft.com/en-in">
+            <p class="hover:underline">Microsoft Advertising</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/industry">
+            <p class="hover:underline">Microsoft Industry</p></a
+          >
+          <a
+            href="https://www.microsoft.com/en-in/microsoft-teams/group-chat-software"
+          >
+            <p class="hover:underline">Microsoft Teams</p></a
+          >
+        </div>
+        <div class="flex-col flex gap-3">
+          <h1 class="text-[rgb(106,97,106)] font-semibold text-base">
+            Developer & IT
+          </h1>
+          <a href="https://developer.microsoft.com/en-in/">
+            <p class="hover:underline">Developer Center</p></a
+          >
+          <a href="https://docs.microsoft.com/en-in/">
+            <p class="hover:underline">Documentation</p></a
+          >
+          <a href="https://docs.microsoft.com/en-in/learn/">
+            <p class="hover:underline">Microsoft Learn</p></a
+          >
+          <a href="https://techcommunity.microsoft.com/">
+            <p class="hover:underline">Microsoft Tech Community</p></a
+          >
+          <a href="https://azuremarketplace.microsoft.com/en-in/">
+            <p class="hover:underline">Azure Marketplace</p></a
+          >
+          <a href="https://appsource.microsoft.com/en-in/">
+            <p class="hover:underline">AppSource</p></a
+          >
+          <a href="https://powerplatform.microsoft.com/en-in/">
+            <p class="hover:underline">Microsoft Power Platform</p></a
+          >
+          <a href="https://visualstudio.microsoft.com/">
+            <p class="hover:underline">Visual Studio</p></a
+          >
+        </div>
+        <div
+          class="flex-col flex gap-3 lg:hidden xl:flex npx tailwindcss -i ./src/input.css -o ./dist/output.css --watchnpx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+        >
+          <h1 class="text-[rgb(106,97,106)] font-semibold text-base">
+            Company
+          </h1>
+          <a href="https://careers.microsoft.com/us/en">
+            <p class="hover:underline">Careers</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/about/">
+            <p class="hover:underline">About Microsoft</p></a
+          >
+          <a href="https://news.microsoft.com/en-in/">
+            <p class="hover:underline">Company news</p></a
+          >
+          <a href="https://privacy.microsoft.com/en-ca">
+            <p class="hover:underline">Privacy at Microsoft</p></a
+          >
+          <a href="https://www.microsoft.com/en-us/investor">
+            <p class="hover:underline">Investors</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/security">
+            <p class="hover:underline">Security</p></a
+          >
+          <a href="https://www.microsoft.com/en-in/sustainability/">
+            <p class="hover:underline">Sustainability</p></a
+          >
+        </div>
+      </div>
+      <div class="text-sm pb-4 mt-10 flex justify-center font-semibold">
+        <p class="text-[rgb(106,97,106)]">
+          Made with &nbsp;
+          <i style="color: red" class="fa-solid fa-heart"></i> &nbsp; By
+          Deeepesh Godwani
+        </p>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
